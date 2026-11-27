@@ -1,2 +1,2 @@
 print("Hello World!")
-print("This is a simple Python script that prints 'Hello World!' to the console.")
+print("i am starting to learn programming")
