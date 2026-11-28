@@ -6,29 +6,35 @@ print("3. Multiply")
 print("4. Divide")
 print("0. Exit")
 choice = ""
+
 while choice != "0":
-    # menu, reading the choice and calculations (indented by 4 spaces)
     choice = input("Choose an option: ")
+
     if choice == "1":
         a = float(input())
         b = float(input())
         print(a + b)
+
     elif choice == "2":
         a = float(input())
         b = float(input())
         print(a - b)
+
     elif choice == "3":
         a = float(input())
         b = float(input())
         print(a * b)
+
     elif choice == "4":
         a = float(input())
         b = float(input())
-        if b != 0:
-            print(a / b)
-        else:
+        if b == 0:
             print("Cannot divide by zero")
+        else:
+            print(a / b)
+
     elif choice == "0":
-        print("Exit")
+        print("End of program")
+
     else:
-        print("Invalid option")
+        print("Unknown option")
