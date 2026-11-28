@@ -5,24 +5,30 @@ print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
 print("0. Exit")
-choice = input("Choose an option: ")
-print("You chose:", choice)
-# Read the choice and print it
-if choice == '1'or choice == '2' or choice == '3' or choice == '4':
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    if choice == '1':
-        result = num1 + num2
-        print("Result:", result)
-    elif choice == '2':
-        result = num1 - num2
-        print("Result:", result)
-    elif choice == '3':
-        result = num1 * num2
-        print("Result:", result)
-    elif choice == '4':
-        if num2 != 0:
-            result = num1 / num2
-            print("Result:", result)
+choice = ""
+while choice != "0":
+    # menu, reading the choice and calculations (indented by 4 spaces)
+    choice = input("Choose an option: ")
+    if choice == "1":
+        a = float(input())
+        b = float(input())
+        print(a + b)
+    elif choice == "2":
+        a = float(input())
+        b = float(input())
+        print(a - b)
+    elif choice == "3":
+        a = float(input())
+        b = float(input())
+        print(a * b)
+    elif choice == "4":
+        a = float(input())
+        b = float(input())
+        if b != 0:
+            print(a / b)
         else:
-            print("Error: Division by zero") 
+            print("Cannot divide by zero")
+    elif choice == "0":
+        print("Exit")
+    else:
+        print("Invalid option")
